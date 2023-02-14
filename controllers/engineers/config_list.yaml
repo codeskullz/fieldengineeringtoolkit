@@ -1,0 +1,12 @@
+title: Engineers
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Engineers
+list: $/nielsvandendries/fieldengineeringtoolkit/models/engineers/columns.yaml
+recordUrl: 'nielsvandendries/fieldengineeringtoolkit/engineers/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

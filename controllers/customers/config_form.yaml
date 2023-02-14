@@ -1,0 +1,11 @@
+name: Customers
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Customers
+form: $/nielsvandendries/fieldengineeringtoolkit/models/customers/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/customers
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/customers/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/customers
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/customers
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/customers
+preview: {  }

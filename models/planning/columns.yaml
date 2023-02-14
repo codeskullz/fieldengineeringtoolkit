@@ -1,0 +1,61 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+        invisible: true
+        sortable: false
+    customer_address:
+        label: Address
+        type: text
+        invisible: true
+    customer_name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    customer_phonenumber:
+        label: 'Phone number'
+        type: text
+        invisible: false
+        sortable: true
+    customer_emailaddress:
+        label: 'E-mail address'
+        type: text
+        invisible: true
+    customer_zipcode:
+        label: Zipcode
+        type: text
+        invisible: true
+    customer_place:
+        label: Place
+        type: text
+        invisible: true
+    wishdate:
+        label: Wishdate
+        type: datetime
+        sortable: true
+    plandate:
+        label: Plandate
+        type: datetime
+        sortable: true
+    job:
+        label: Job
+        type: text
+        invisible: true
+    status:
+        label: Status
+        type: text
+        sortable: true
+    archive:
+        label: Archived
+        type: switch
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

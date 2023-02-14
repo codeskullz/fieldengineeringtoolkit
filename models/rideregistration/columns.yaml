@@ -1,0 +1,39 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    from:
+        label: from
+        type: text
+        searchable: true
+        sortable: true
+    to:
+        label: to
+        type: text
+        searchable: true
+        sortable: true
+    start:
+        label: start
+        type: number
+    end:
+        label: end
+        type: number
+    licenseplate:
+        label: licenseplate
+        type: text
+        searchable: true
+        sortable: true
+    driver:
+        label: driver
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

@@ -1,0 +1,78 @@
+plugin:
+    name: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+    description: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.description'
+    author: 'Niels van den Dries'
+    icon: oc-icon-wrench
+    homepage: ''
+permissions:
+    Manager:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: Manager
+    Engineers:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: Engineers
+    Jobs:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: Jobs
+    Planning:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: Planning
+    Project:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: Project
+    RideRegistration:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: RideRegistration
+    UserManager:
+        tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        label: UserManager
+navigation:
+    main-menu-item:
+        label: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
+        url: nielsvandendries/fieldengineeringtoolkit/planning
+        icon: icon-wrench
+        permissions:
+            - Manager
+        sideMenu:
+            side-menu-item:
+                label: Customers
+                url: nielsvandendries/fieldengineeringtoolkit/customers
+                icon: icon-users
+                permissions:
+                    - Manager
+            side-menu-item2:
+                label: Engineers
+                url: nielsvandendries/fieldengineeringtoolkit/engineers
+                icon: icon-user-md
+                permissions:
+                    - Engineers
+            side-menu-item3:
+                label: Jobs
+                url: nielsvandendries/fieldengineeringtoolkit/jobs
+                icon: icon-briefcase
+                permissions:
+                    - Jobs
+            side-menu-item4:
+                label: Planning
+                url: nielsvandendries/fieldengineeringtoolkit/planning
+                icon: icon-calendar
+                permissions:
+                    - Planning
+            side-menu-item5:
+                label: Projects
+                url: nielsvandendries/fieldengineeringtoolkit/projects
+                icon: icon-stack-overflow
+                permissions:
+                    - Project
+            side-menu-item6:
+                label: 'Ride Registration'
+                url: nielsvandendries/fieldengineeringtoolkit/rideregistration
+                icon: icon-car
+                permissions:
+                    - RideRegistration
+            side-menu-item7:
+                label: 'User Manager'
+                url: nielsvandendries/fieldengineeringtoolkit/usermanager
+                icon: icon-user-plus
+                permissions:
+                    - UserManager

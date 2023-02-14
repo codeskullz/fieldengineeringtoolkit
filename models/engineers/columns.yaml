@@ -1,0 +1,58 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    address:
+        label: address
+        type: text
+        searchable: true
+        sortable: true
+    zipcode:
+        label: zipcode
+        type: text
+        searchable: true
+        sortable: true
+    place:
+        label: place
+        type: text
+        searchable: true
+        sortable: true
+    businessoperations:
+        label: businessoperations
+        type: text
+        searchable: false
+        invisible: true
+    skills:
+        label: skills
+        type: text
+        searchable: true
+        sortable: true
+    contract:
+        label: contract
+        type: text
+        searchable: true
+        sortable: true
+    car:
+        label: car
+        type: text
+        searchable: true
+        sortable: true
+    outofservice:
+        label: outofservice
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

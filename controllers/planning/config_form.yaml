@@ -1,0 +1,11 @@
+name: Planning
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Planning
+form: $/nielsvandendries/fieldengineeringtoolkit/models/planning/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/planning
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/planning/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/planning
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/planning
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/planning
+preview: {  }

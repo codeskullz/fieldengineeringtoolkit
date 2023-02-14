@@ -1,0 +1,39 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    job:
+        label: Job
+        type: text
+        searchable: false
+    engineer:
+        label: Engineer
+        type: text
+        searchable: true
+        sortable: true
+    archive:
+        label: Archived
+        type: switch
+        sortable: true
+    tools:
+        label: tools
+        type: text
+        invisible: true
+    description:
+        label: Description
+        type: text
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

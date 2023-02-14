@@ -1,0 +1,11 @@
+name: Jobs
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Jobs
+form: $/nielsvandendries/fieldengineeringtoolkit/models/jobs/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/jobs
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/jobs/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/jobs
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/jobs
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/jobs
+preview: {  }

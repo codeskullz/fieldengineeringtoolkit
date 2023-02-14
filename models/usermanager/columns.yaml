@@ -1,0 +1,72 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    first_name:
+        label: 'First name'
+        type: text
+        searchable: true
+    last_name:
+        label: 'Last name'
+        type: text
+        searchable: true
+    login:
+        label: Username
+        type: text
+        searchable: true
+    email:
+        label: E-mail
+        type: text
+        searchable: true
+    password:
+        label: password
+        type: text
+        invisible: true
+    activation_code:
+        label: activation_code
+        type: text
+        invisible: true
+    persist_code:
+        label: persist_code
+        type: text
+        invisible: true
+    reset_password_code:
+        label: reset_password_code
+        type: text
+        invisible: true
+    permissions:
+        label: permissions
+        type: text
+        invisible: true
+    is_activated:
+        label: Active
+        type: switch
+        sortable: true
+    is_superuser:
+        label: is_superuser
+        type: text
+        invisible: true
+    activated_at:
+        label: activated_at
+        type: text
+        invisible: true
+    last_login:
+        label: 'Last Login'
+        type: text
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        invisible: true
+    role_id:
+        label: role_id
+        type: number
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

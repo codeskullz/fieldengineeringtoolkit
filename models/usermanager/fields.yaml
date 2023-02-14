@@ -1,0 +1,86 @@
+fields:
+    avatar:
+        label: 'backend::lang.user.avatar'
+        mode: image
+        imageWidth: 250
+        imageHeight: 250
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: right
+        type: fileupload
+    first_name:
+        label: 'First name'
+        span: left
+        type: text
+    colorcode:
+        label: 'Color picker'
+        availableColors:
+            - '#3498db'
+            - '#1abc9c'
+            - '#c0392b'
+            - '#2b3e50'
+            - '#f1c40f'
+        span: right
+        type: colorpicker
+    last_name:
+        label: 'Last name'
+        span: left
+        type: text
+    email:
+        label: Email
+        span: left
+        type: text
+tabs:
+    fields:
+        login:
+            label: Login
+            span: left
+            disabled: 1
+            readOnly: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: Account
+        password:
+            label: Password
+            span: left
+            hidden: 1
+            type: password
+            tab: Account
+        password_confirmation:
+            label: 'backend::lang.user.password_confirmation'
+            span: right
+            hidden: 1
+            type: password
+            tab: Account
+        role_id:
+            label: Roles
+            span: full
+            options:
+                3: Planner
+                4: 'Field Engineer'
+                5: 'Project Manager'
+            type: radio
+            tab: Account
+        persist_code:
+            label: persistcode
+            span: auto
+            readOnly: 1
+            hidden: 1
+            type: text
+            tab: Account
+        last_login:
+            label: 'Last Login'
+            span: auto
+            disabled: 1
+            type: text
+            tab: Info
+        created_at:
+            label: 'Create At'
+            span: auto
+            disabled: 1
+            type: text
+            tab: Info

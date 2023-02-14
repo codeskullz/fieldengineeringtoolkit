@@ -1,0 +1,11 @@
+name: UserManager
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\UserManager
+form: $/nielsvandendries/fieldengineeringtoolkit/models/usermanager/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/usermanager
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/usermanager/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/usermanager
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/usermanager
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/usermanager
+preview: {  }

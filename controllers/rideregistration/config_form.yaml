@@ -1,0 +1,10 @@
+name: RideRegistration
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\RideRegistration
+form: $/nielsvandendries/fieldengineeringtoolkit/models/rideregistration/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/rideregistration
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/rideregistration/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/rideregistration
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/rideregistration
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/rideregistration

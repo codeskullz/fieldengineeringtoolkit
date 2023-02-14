@@ -1,0 +1,50 @@
+fields:
+    name:
+        label: Name
+        span: left
+        required: 1
+        type: text
+    address:
+        label: Address
+        span: left
+        required: 1
+        type: text
+    zipcode:
+        label: Zipcode
+        span: left
+        required: 1
+        type: text
+    place:
+        label: Place
+        span: left
+        required: 1
+        type: text
+    phonenumber:
+        label: 'Phone Number'
+        span: left
+        type: text
+    created_at:
+        label: 'Created at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    emailaddress:
+        label: 'E-mail address'
+        span: left
+        required: 1
+        type: text
+    updated_at:
+        label: 'Updated at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    id:
+        label: Id
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: number

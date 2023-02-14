@@ -1,0 +1,49 @@
+fields:
+    name:
+        label: Name
+        span: full
+        required: 1
+        type: text
+    job:
+        label: Job
+        size: small
+        span: auto
+        required: 1
+        type: textarea
+    tools:
+        label: Tools
+        size: small
+        span: auto
+        type: textarea
+    archive:
+        label: Archived
+        'on': 'Yes'
+        'off': 'No'
+        span: auto
+        required: 1
+        type: switch
+    description:
+        label: Description
+        size: large
+        span: full
+        type: richeditor
+    created_at:
+        label: 'Created at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    updated_at:
+        label: 'Updated at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    id:
+        label: Id
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: number

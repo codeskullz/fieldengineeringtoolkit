@@ -1,0 +1,70 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    address:
+        label: Address
+        span: auto
+        type: text
+    zipcode:
+        label: Zipcode
+        span: auto
+        type: text
+    place:
+        label: Place
+        span: auto
+        type: text
+    businessoperations:
+        label: Businessoperations
+        showSearch: true
+        span: right
+        options:
+            ZZP: ZZP
+            BV: BV
+            FreeLance: FreeLance
+        type: dropdown
+    section1:
+        label: Section
+        span: full
+        type: section
+    skills:
+        label: Skills
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        span: right
+        type: taglist
+    contract:
+        label: 'Contract?'
+        span: left
+        type: checkbox
+    car:
+        label: 'Car Owned?'
+        span: left
+        type: checkbox
+    outofservice:
+        label: 'Out of Service?'
+        span: left
+        type: checkbox
+    created_at:
+        label: 'Created at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    updated_at:
+        label: 'Updated at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: datepicker
+    id:
+        label: Id
+        span: auto
+        readOnly: 1
+        hidden: 1
+        type: number

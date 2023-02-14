@@ -1,0 +1,10 @@
+title: UserManager
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\UserManager
+list: $/nielsvandendries/fieldengineeringtoolkit/models/usermanager/columns.yaml
+recordUrl: 'nielsvandendries/fieldengineeringtoolkit/usermanager/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: 1
+toolbar:
+    search:
+        prompt: 'backend::lang.list.search_prompt'

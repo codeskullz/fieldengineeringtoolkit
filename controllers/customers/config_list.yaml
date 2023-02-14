@@ -1,0 +1,12 @@
+title: Customers
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Customers
+list: $/nielsvandendries/fieldengineeringtoolkit/models/customers/columns.yaml
+recordUrl: 'nielsvandendries/fieldengineeringtoolkit/customers/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
