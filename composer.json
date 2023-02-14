@@ -1,5 +1,5 @@
 {
-    "name": "nielsvandendries/fieldengineeringtoolkit-plugin",
+    "name": "NielsVanDenDries/fieldengineeringtoolkit-plugin",
     "type": "october-plugin",
     "description": "Field Engineering Toolkit",
     "require": {
