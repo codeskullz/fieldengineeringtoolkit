@@ -1,0 +1,8 @@
+{
+    "name": "nielsvandendries/fieldengineeringtoolkit",
+    "type": "october-plugin",
+    "description": "Field Engineering Toolkit",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
