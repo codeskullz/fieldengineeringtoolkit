@@ -29,7 +29,10 @@
   </div>
 
 {% else %}
-    <p class="no-data"><i>Geen taken gevonden</i></p>
+<div class="no-data">
+  <div class="alert alert-danger" role="alert">
+    <i><i class="bi bi-exclamation-triangle"></i> Geen taken gevonden</i>
+  </div>
 </div>
 {% endfor %}
 
