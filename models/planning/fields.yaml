@@ -76,3 +76,8 @@ fields:
         label: Archived
         span: auto
         type: checkbox
+    engineer:
+        label: Assignee
+        span: auto
+        showSearch: true
+        type: dropdown

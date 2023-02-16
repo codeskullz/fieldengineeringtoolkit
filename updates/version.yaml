@@ -78,3 +78,6 @@
 1.0.27:
     - 'Created table nielsvandendries_fieldengineeringtoolkit_maps_objects'
     - builder_table_create_nielsvandendries_fieldengineeringtoolkit_maps_objects.php
+1.0.28:
+    - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
+    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_3.php
