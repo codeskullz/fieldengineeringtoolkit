@@ -64,7 +64,3 @@ columns:
         type: datetime
         invisible: true
         useTimezone: '1'
-    engineer:
-        label: Engineer
-        type: text
-        sortable: true

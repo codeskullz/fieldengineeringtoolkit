@@ -78,10 +78,3 @@ fields:
         label: Archived
         span: auto
         type: checkbox
-    engineer:
-        label: Assignee
-        span: auto
-        showSearch: true
-        options:
-            'Niels van den Dries': 'Niels van den Dries'
-        type: dropdown
