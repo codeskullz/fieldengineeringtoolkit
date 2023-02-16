@@ -2,6 +2,13 @@
     "name": "nielsvandendries/fieldengineeringtoolkit-plugin",
     "type": "october-plugin",
     "description": "Field Engineering Toolkit",
+    "authors": [
+        {
+            "name": "Niels van den Dries",
+            "email": "niels@nvandendries.nl",
+            "role": "Founder"
+        }
+    ],
     "require": {
         "composer/installers": "~1.0"
     }
