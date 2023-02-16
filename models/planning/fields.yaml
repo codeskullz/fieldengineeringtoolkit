@@ -25,10 +25,12 @@ fields:
         type: text
     wishdate:
         label: Wishdate
+        mode: datetime
         span: auto
         type: datepicker
     plandate:
         label: Plandate
+        mode: datetime
         span: auto
         type: datepicker
     status:
@@ -80,4 +82,6 @@ fields:
         label: Assignee
         span: auto
         showSearch: true
+        options:
+            'Niels van den Dries': 'Niels van den Dries'
         type: dropdown

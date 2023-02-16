@@ -35,10 +35,12 @@ columns:
         label: Wishdate
         type: datetime
         sortable: true
+        useTimezone: '1'
     plandate:
         label: Plandate
         type: datetime
         sortable: true
+        useTimezone: '1'
     job:
         label: Job
         type: text
@@ -49,13 +51,20 @@ columns:
         sortable: true
     archive:
         label: Archived
-        type: switch
+        type: inetis-list-switch
+        icon: '1'
         sortable: true
     created_at:
         label: created_at
         type: datetime
         invisible: true
+        useTimezone: '1'
     updated_at:
         label: updated_at
         type: datetime
         invisible: true
+        useTimezone: '1'
+    engineer:
+        label: Engineer
+        type: text
+        sortable: true
