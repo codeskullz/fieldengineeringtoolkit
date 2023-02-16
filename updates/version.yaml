@@ -87,3 +87,6 @@
 1.0.30:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_4.php
+1.0.31:
+    - 'Drop table nielsvandendries_fieldengineeringtoolkit_maps_objects'
+    - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_maps_objects.php
