@@ -90,3 +90,15 @@
 1.0.31:
     - 'Drop table nielsvandendries_fieldengineeringtoolkit_maps_objects'
     - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_maps_objects.php
+1.0.32:
+    - 'Drop table nielsvandendries_fieldengineeringtoolkit_unitsofdistance'
+    - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_unitsofdistance.php
+1.0.33:
+    - 'Created table nielsvandendries_fieldengineeringtoolkit_settings'
+    - builder_table_create_nielsvandendries_fieldengineeringtoolkit_settings.php
+1.0.34:
+    - 'Updated table nielsvandendries_fieldengineeringtoolkit_settings'
+    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_settings.php
+1.0.35:
+    - 'Updated table nielsvandendries_fieldengineeringtoolkit_settings'
+    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_settings_2.php

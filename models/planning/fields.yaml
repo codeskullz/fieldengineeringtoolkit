@@ -1,80 +1,73 @@
-fields:
-    customer_address:
-        label: 'Customer address'
-        span: auto
-        type: text
-    customer_name:
-        label: 'Customer name'
-        span: auto
-        type: text
-    customer_phonenumber:
-        label: 'Customer phonenumber'
-        span: auto
-        type: text
-    customer_emailaddress:
-        label: 'Customer emailaddress'
-        span: auto
-        type: text
-    customer_zipcode:
-        label: 'Customer zipcode'
-        span: auto
-        type: text
-    customer_place:
-        label: 'Customer place'
-        span: auto
-        type: text
-    wishdate:
-        label: Wishdate
-        mode: datetime
-        span: auto
-        type: datepicker
-    plandate:
-        label: Plandate
-        mode: datetime
-        span: auto
-        type: datepicker
-    status:
-        label: Status
-        span: auto
-        options:
-            Open: Open
-            Done: Done
-            Revisit: Revisit
-        type: balloon-selector
-    job:
-        label: Job
-        options:
-            1: 'Meten en Opleveren'
-            2: Troubleshooting
-        showSearch: true
-        span: auto
-        type: dropdown
-    created_at:
-        label: 'Created at'
-        mode: datetime
-        span: auto
-        readOnly: 1
-        hidden: 1
-        type: datepicker
-    updated_at:
-        label: 'Updated at'
-        mode: datetime
-        span: auto
-        readOnly: 1
-        hidden: 1
-        type: datepicker
-    id:
-        label: Id
-        span: auto
-        readOnly: 1
-        hidden: 1
-        type: number
-    description:
-        label: Description
-        size: large
-        span: full
-        type: richeditor
-    archive:
-        label: Archived
-        span: auto
-        type: checkbox
+tabs:
+    fields:
+        customer_name:
+            label: 'Customer name'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        customer_emailaddress:
+            label: 'Customer emailaddress'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        customer_address:
+            label: 'Customer address'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        customer_phonenumber:
+            label: 'Customer phonenumber'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        customer_place:
+            label: 'Customer place'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        customer_zipcode:
+            label: 'Customer zipcode'
+            span: auto
+            type: text
+            tab: 'Customer Details'
+        plandate:
+            label: Plandate
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: 'Task Details'
+        wishdate:
+            label: Wishdate
+            mode: datetime
+            span: right
+            type: datepicker
+            tab: 'Task Details'
+        job:
+            label: Job
+            options:
+                1: 'Meten en Opleveren'
+                2: Troubleshooting
+            showSearch: true
+            span: auto
+            type: dropdown
+            tab: 'Task Details'
+        status:
+            label: Status
+            span: auto
+            options:
+                Open: Open
+                Done: Done
+                Revisit: Revisit
+            type: balloon-selector
+            tab: 'Task Details'
+        description:
+            label: Description
+            size: large
+            span: auto
+            type: richeditor
+            tab: 'Task Details'
+        archive:
+            label: Archived
+            span: auto
+            type: checkbox
+            tab: 'Task Details'

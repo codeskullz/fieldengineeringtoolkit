@@ -76,3 +76,9 @@ navigation:
                 icon: icon-user-plus
                 permissions:
                     - UserManager
+            side-menu-item8:
+                label: Setting
+                url: nielsvandendries/fieldengineeringtoolkit/settings
+                icon: icon-gears
+                permissions:
+                    - Manager

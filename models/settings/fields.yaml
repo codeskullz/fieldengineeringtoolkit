@@ -1,0 +1,34 @@
+fields:
+    licence_key:
+        label: 'License Key'
+        span: full
+        required: 1
+        type: text
+    customers_module:
+        label: 'Customers module'
+        span: auto
+        type: switch
+    engineers_module:
+        label: 'Engineers module'
+        span: auto
+        type: switch
+    jobs_module:
+        label: 'Jobs module'
+        span: auto
+        type: switch
+    planning_module:
+        label: 'Planning module'
+        span: auto
+        type: switch
+    projects_module:
+        label: 'Projects module'
+        span: auto
+        type: switch
+    rideregistration_module:
+        label: 'Rideregistration module'
+        span: auto
+        type: switch
+    usermanager_module:
+        label: 'Usermanager module'
+        span: auto
+        type: switch

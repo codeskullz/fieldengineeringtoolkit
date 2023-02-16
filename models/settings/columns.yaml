@@ -1,0 +1,43 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    customers_module:
+        label: customers_module
+        type: inetis-list-switch
+        invisible: false
+    engineers_module:
+        label: engineers_module
+        type: inetis-list-switch
+        invisible: false
+    jobs_module:
+        label: jobs_module
+        type: inetis-list-switch
+        invisible: false
+    planning_module:
+        label: planning_module
+        type: inetis-list-switch
+        invisible: false
+    projects_module:
+        label: projects_module
+        type: inetis-list-switch
+        invisible: false
+    rideregistration_module:
+        label: rideregistration_module
+        type: inetis-list-switch
+        invisible: false
+    usermanager_module:
+        label: usermanager_module
+        type: inetis-list-switch
+        invisible: false
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+    license_key:
+        label: Licence
+        type: text

@@ -1,0 +1,11 @@
+name: Settings
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Settings
+form: $/nielsvandendries/fieldengineeringtoolkit/models/settings/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/settings
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/settings/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/settings
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/settings
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/settings
+preview: {  }
