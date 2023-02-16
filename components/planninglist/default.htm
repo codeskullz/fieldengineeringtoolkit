@@ -1,17 +1,36 @@
 {% set Planning = __SELF__.item %}
 
-{% for item in Planning %}
 <div class="mt-2">
-<h3><i class="bi bi-geo-alt-fill"></i> {{ item.customer_address }}</h3>
-    <pre>
-Zipcode: {{ item.customer_zipcode }}
-City: {{ item.customer_place }}
-Phonenumber: {{ item.customer_phonenumber }}
-E-mail address: {{ item.customer_emailaddress }}
-Wishdate: {{ item.wishdate }}
-Plandate: {{ item.plandate }}
-Status: {{ item.status }}
-Comments: {{ item.description|raw }}
-    </pre>
+{% for item in Planning %}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h5><i class="bi bi-geo-alt-fill"></i> {{ item.customer_address }}</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <pre>
+<strong>Comments:</strong> {{ item.description|raw }}
+        </pre>
+      </div>
+      <div class="col-md-4">
+        <pre>
+  <strong>City:</strong> {{ item.customer_place }}
+  <strong>Zipcode:</strong> {{ item.customer_zipcode }}
+  <strong>Phonenumber:</strong> {{ item.customer_phonenumber }}
+  <strong>E-mail address:</strong> {{ item.customer_emailaddress }}
+  <strong>Wishdate:</strong> {{ item.wishdate }}
+  <strong>Plandate:</strong> {{ item.plandate }}
+  <strong>Status:</strong> {{ item.status }}
+          </pre>
+      </div>
+    </div>
+  </div>
+
+{% else %}
+    <p class="no-data"><i>Geen taken gevonden</i></p>
 </div>
 {% endfor %}
+
+</strong>

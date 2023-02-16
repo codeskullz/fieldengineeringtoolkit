@@ -21,8 +21,26 @@ class Planninglist extends ComponentBase
         ];
     }
 
+    public function defineProperties()
+    {
+        return [
+            'archive' => [
+                'title'             => 'Gearchiveerd',
+                'description'       => 'Watch the Simpson',
+                'type'              => 'dropdown',
+            ]
+        ];
+    }
+
+    public function getArchiveOptions()
+    {
+        return Planning::get()->lists('archive', 'archive');
+    }
+
     public function onRun()
     {
         $this->item = Planning::get()->toArray();
+        // filter voor archivering
+        $this->item = Planning::where('archive', $this->property('archive'))->get()->toArray();
     }
 }
