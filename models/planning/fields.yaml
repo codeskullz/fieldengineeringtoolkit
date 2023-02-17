@@ -1,3 +1,8 @@
+fields:
+    hint1:
+        label: 'This is the place where you make a planning Item that can be displayed in the Frontend'
+        span: full
+        type: hint
 tabs:
     fields:
         customer_name:
