@@ -3,12 +3,6 @@
 use Cms\Classes\ComponentBase;
 use Nielsvandendries\Fieldengineeringtoolkit\Models\Planning;
 
-
-/**
- * Planninglist Component
- *
- * @link https://docs.octobercms.com/3.x/extend/cms-components.html
- */
 class Planninglist extends ComponentBase
 {
     public $item;
