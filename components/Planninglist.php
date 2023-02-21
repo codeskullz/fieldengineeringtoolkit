@@ -7,6 +7,7 @@ class Planninglist extends ComponentBase
 {
     public $item;
 
+    // Functie die de labels maakt
     public function componentDetails()
     {
         return [
@@ -15,6 +16,7 @@ class Planninglist extends ComponentBase
         ];
     }
 
+    // Functie die een drowdown weergeeft in de editor mode met de filter Archive
     public function defineProperties()
     {
         return [
@@ -26,6 +28,7 @@ class Planninglist extends ComponentBase
         ];
     }
 
+    // Functie de de gegevens ophaalt uit de database
     public function getArchiveOptions()
     {
         return Planning::get()->lists('archive', 'archive');
@@ -33,8 +36,7 @@ class Planninglist extends ComponentBase
 
     public function onRun()
     {
-        $this->item = Planning::get()->toArray();
-        // filter voor archivering
+        // filter voor gearchiveerde item keuze uit 0 en 1
         $this->item = Planning::where('archive', $this->property('archive'))->get()->toArray();
     }
 }
