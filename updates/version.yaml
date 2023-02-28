@@ -102,3 +102,9 @@
 1.0.35:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_settings'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_settings_2.php
+1.0.36:
+    - 'Created table nielsvandendries_fieldengineeringtoolkit_objects'
+    - builder_table_create_nielsvandendries_fieldengineeringtoolkit_objects.php
+1.0.37:
+    - 'Updated table nielsvandendries_fieldengineeringtoolkit_objects'
+    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects.php

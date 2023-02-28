@@ -1,0 +1,53 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    location:
+        label: location
+        type: text
+        sortable: true
+    description:
+        label: description
+        type: text
+        invisible: true
+    type:
+        label: type
+        type: text
+        searchable: true
+        sortable: true
+    brand:
+        label: brand
+        type: text
+        searchable: true
+        sortable: true
+    model:
+        label: model
+        type: text
+        searchable: true
+    archive:
+        label: archive
+        type: switch
+        sortable: true
+    customer:
+        label: customer
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        sortable: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        invisible: true

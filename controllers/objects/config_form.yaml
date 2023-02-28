@@ -1,0 +1,11 @@
+name: Objects
+modelClass: NielsVanDenDries\FieldEngineeringToolkit\Models\Objects
+form: $/nielsvandendries/fieldengineeringtoolkit/models/objects/fields.yaml
+defaultRedirect: nielsvandendries/fieldengineeringtoolkit/objects
+create:
+    redirect: 'nielsvandendries/fieldengineeringtoolkit/objects/update/:id'
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/objects
+update:
+    redirect: nielsvandendries/fieldengineeringtoolkit/objects
+    redirectClose: nielsvandendries/fieldengineeringtoolkit/objects
+preview: {  }

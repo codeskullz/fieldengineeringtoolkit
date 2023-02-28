@@ -1,0 +1,40 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    customer:
+        label: Customer
+        span: auto
+        type: text
+    location:
+        label: Location
+        span: auto
+        type: text
+        comment: 'Write as 51.57419/5.18047'
+    type:
+        label: Type
+        span: auto
+        options:
+            Hardware: Hardware
+            Software: Software
+            Other: Other
+        showSearch: true
+        type: dropdown
+    brand:
+        label: Brand
+        span: auto
+        type: text
+    model:
+        label: Model
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: small
+        span: full
+        type: richeditor
+    archive:
+        label: Archive
+        span: auto
+        type: switch

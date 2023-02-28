@@ -77,8 +77,8 @@ navigation:
                 permissions:
                     - UserManager
             side-menu-item8:
-                label: Setting
-                url: nielsvandendries/fieldengineeringtoolkit/settings
-                icon: icon-gears
+                label: Objects
+                url: nielsvandendries/fieldengineeringtoolkit/objects
+                icon: icon-dropbox
                 permissions:
                     - Manager
