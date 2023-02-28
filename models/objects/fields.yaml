@@ -11,7 +11,7 @@ fields:
         label: Location
         span: auto
         type: text
-        comment: 'Write as 51.57419/5.18047'
+        comment: 'Write as 51.57419/5.18047 because of the frontend URL'
     type:
         label: Type
         span: auto
