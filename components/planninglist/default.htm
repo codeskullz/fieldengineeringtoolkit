@@ -10,19 +10,17 @@
 {# start dropping the content #}
 <div class="mt-2">
 {% for item in Planning %}
-<div class="container-fluid">
+<div class="container-fluid" style="border: 1px solid lightgray;border-radius: 5px;padding: 8px;">
     <div class="row">
       <div class="col-md-12">
         <h5><i class="bi bi-geo-alt-fill"></i> {{ item.customer_address }}</h5>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8">
-        <pre>
+      <div class="col">
         <strong>Comments:</strong> {{ item.description|raw }}
-        </pre>
       </div>
-      <div class="col-md-4">
+      <div class="col">
         <pre>
         <strong>City:</strong> {{ item.customer_place }}
         <strong>Zipcode:</strong> {{ item.customer_zipcode }}
