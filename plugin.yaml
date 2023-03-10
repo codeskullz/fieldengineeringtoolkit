@@ -22,10 +22,10 @@ permissions:
         label: Project
     RideRegistration:
         tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
-        label: RideRegistration
+        label: 'Ride Registration'
     UserManager:
         tab: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
-        label: UserManager
+        label: 'User Manager'
 navigation:
     main-menu-item:
         label: 'nielsvandendries.fieldengineeringtoolkit::lang.plugin.name'
