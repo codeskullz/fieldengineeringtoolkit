@@ -1,35 +1,32 @@
-{% set Map = __SELF__.item %}
-
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
-<div id="map" style="height: 700px;"></div>
+<div id="mapoverview" style="height: 700px;"></div>
 
-{% for item in Map %}
-  
-  <script>
-    var map = L.map('map').setView([{{ item.map_location }}], {{ item.maxzoom }});
+{% set Map = __SELF__.item %}
+
+<script>
+
+    var map = L.map('mapoverview').setView([51.5787688, 5.1811932], 15);
   
     var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     	maxZoom: 19,
     	attribution: ''
     }).addTo(map);
-    
-    var circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
-
-    var popup = L.popup()
-    .setLatLng([{{ item.location }}])
-    .setContent("{{ item. name }}")
-    .openOn(map);
-
-    var parameters = {};
 
   </script>
 
-  <script>
-  var {{ item.name }} = L.marker([{{ item.location }}]).bindPopup('{{ item.name }}')  
-  var objects = L.layerGroup([{{ item.name }}]);
+  {% set Map = __SELF__.item %}
+
+   <script>
+
+    {% for item in Map %}
+
+    var circle = L.circle([{{ item.location }}],
+      {{ item.parameters|raw }}
+    )
+    .addTo(map)
+    .bindPopup("{{ item.name }}");
+
+    {% endfor %}
   </script>
-
-{% endfor %}
-
