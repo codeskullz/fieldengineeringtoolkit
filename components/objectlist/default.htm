@@ -5,31 +5,44 @@
 
 {% for item in Objects %}
 
-<p>
-    <h3><strong>{{ item. name }}</strong></h3>
-    Customer: {{ item.customer }}<br>
-    GPS: {{ item.location }}<br>
-    Type: {{ item.type }}<br>
-    Brand: {{ item.brand }}<br>
-    Model: {{ item.model }}<br>
-</p>
-
-<div>
+<h3><strong>{{ item. name }}</strong></h3>
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item" style="width: -webkit-fill-available;">
+    <p>
+        <strong>Customer:</strong> {{ item.customer }}<br>
+        <strong>GPS:</strong> {{ item.location }}<br>
+        <strong>Type:</strong> {{ item.type }}<br>
+        <strong>Brand:</strong> {{ item.brand }}<br>
+        <strong>Model:</strong> {{ item.model }}<br>
+    </p>
+  </li>
+  <li class="list-group-item" style="width: -webkit-fill-available;">
     Description: {{ item.description|raw }}<br>
-    <div id="map" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
-</div>
+  </li>
+  <li class="list-group-item" style="width: -webkit-fill-available;">
+    <div>
+        Geo Location:<br>
+        <div id="map" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
+    </div>
+  </li>
 
   <script>
     const map = L.map('map').setView([{{ item.location }}], {{ item.maxzoom }});
+  
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    	maxZoom: 19,
+    	attribution: ''
+    }).addTo(map);
 
-	  const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	  	maxZoom: 19,
-	  	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	  }).addTo(map);
+    const circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
+
+    var popup = L.popup()
+    .setLatLng([{{ item.location }}])
+    .setContent("{{ item.description|raw }}")
+    .openOn(map);
+
   </script>
-
-
-<hr>
+</ul>
 {% else %}
 
 <div class="no-data">
@@ -39,3 +52,4 @@
 </div>
 
 {% endfor %}
+
