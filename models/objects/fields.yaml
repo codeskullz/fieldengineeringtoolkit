@@ -7,11 +7,6 @@ fields:
         label: Customer
         span: auto
         type: text
-    location:
-        label: Location
-        span: auto
-        type: text
-        comment: 'Write as 51.57419/5.18047 because of the frontend URL'
     type:
         label: Type
         span: auto
@@ -38,3 +33,23 @@ fields:
         label: Archive
         span: auto
         type: switch
+    section1:
+        label: 'GPS Settings'
+        span: full
+        type: section
+    location:
+        label: Location
+        span: auto
+        type: text
+        comment: 'Write as 51.57419,5.18047 because of the frontend URL'
+    parameters:
+        label: 'GPS Parameters'
+        size: small
+        language: php
+        span: auto
+        type: codeeditor
+    maxzoom:
+        label: 'Zoom Level'
+        span: auto
+        default: '16'
+        type: number

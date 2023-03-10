@@ -38,5 +38,7 @@ class Objectlist extends ComponentBase
     {
         // filter voor gearchiveerde item keuze uit 0 en 1
         $this->item = Objects::where('archive', $this->property('archive'))->get()->toArray();
+        $this->addCss('/plugins/nielsvandendries/fieldengineeringtoolkit/assets/leaflet.css');
+        $this->addJs('/plugins/nielsvandendries/fieldengineeringtoolkit/assets/leaflet.js');
     }
 }
