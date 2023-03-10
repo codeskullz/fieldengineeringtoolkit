@@ -5,7 +5,7 @@
 
 {% for item in Objects %}
 
-<h3><strong>{{ item. name }}</strong></h3>
+<h3><strong>{{ item.name }}</strong></h3>
 <ul class="list-group list-group-horizontal">
   <li class="list-group-item" style="width: -webkit-fill-available;">
     <p>
@@ -22,19 +22,19 @@
   <li class="list-group-item" style="width: -webkit-fill-available;">
     <div>
         Geo Location:<br>
-        <div id="map" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
+        <div id="map{{ item.id }}" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
     </div>
   </li>
 
   <script>
-    const map = L.map('map').setView([{{ item.location }}], {{ item.maxzoom }});
+    var map = L.map('map{{ item.id }}').setView([{{ item.location }}], {{ item.maxzoom }});
   
-    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     	maxZoom: 19,
     	attribution: ''
     }).addTo(map);
 
-    const circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
+    var circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
 
     var popup = L.popup()
     .setLatLng([{{ item.location }}])

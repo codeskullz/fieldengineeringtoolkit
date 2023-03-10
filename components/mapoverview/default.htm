@@ -24,7 +24,11 @@
 
     var parameters = {};
 
+  </script>
 
+  <script>
+  var {{ item.name }} = L.marker([{{ item.location }}]).bindPopup('{{ item.name }}')  
+  var objects = L.layerGroup([{{ item.name }}]);
   </script>
 
 {% endfor %}
