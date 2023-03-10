@@ -1,33 +1,21 @@
-{% set Objects = __SELF__.item %}
+{% set Map = __SELF__.item %}
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
-{% for item in Objects %}
 
-<h3><strong>{{ item. name }}</strong></h3>
-<ul class="list-group list-group-horizontal">
-  <li class="list-group-item" style="width: -webkit-fill-available;">
-    <p>
-        <strong>Customer:</strong> {{ item.customer }}<br>
-        <strong>GPS:</strong> {{ item.location }}<br>
-        <strong>Type:</strong> {{ item.type }}<br>
-        <strong>Brand:</strong> {{ item.brand }}<br>
-        <strong>Model:</strong> {{ item.model }}<br>
-    </p>
-  </li>
-  <li class="list-group-item" style="width: -webkit-fill-available;">
-    Description: {{ item.description|raw }}<br>
-  </li>
+
   <li class="list-group-item" style="width: -webkit-fill-available;">
     <div>
         Geo Location:<br>
-        <div id="map" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
+        <div id="map" style="height: 700px;"></div>
     </div>
   </li>
 
+  {% for item in Map %}
+
   <script>
-    const map = L.map('map').setView([{{ item.location }}], {{ item.maxzoom }});
+    const map = L.map('map').setView([{{ item.map_location }}], {{ item.maxzoom }});
   
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     	maxZoom: 19,
@@ -42,7 +30,7 @@
     .openOn(map);
 
   </script>
-</ul>
+
 {% else %}
 
 <div class="no-data">

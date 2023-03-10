@@ -53,3 +53,7 @@ fields:
         span: auto
         default: '16'
         type: number
+    map_location:
+        label: 'Map overview location'
+        span: auto
+        type: text

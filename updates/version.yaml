@@ -114,3 +114,6 @@
 1.0.41:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_objects'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects_5.php
+1.0.42:
+    - 'Updated table nielsvandendries_fieldengineeringtoolkit_objects'
+    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects_6.php

@@ -8,7 +8,8 @@ class Plugin extends PluginBase
     {
         return [
             '\Nielsvandendries\Fieldengineeringtoolkit\Components\Planninglist' => 'Planninglist',
-            '\Nielsvandendries\Fieldengineeringtoolkit\Components\Objectlist' => 'Objectlist'
+            '\Nielsvandendries\Fieldengineeringtoolkit\Components\Objectlist' => 'Objectlist',
+            //'\Nielsvandendries\Fieldengineeringtoolkit\Components\Mapoverview' => 'Mapoverview'
         ];
     }
 
