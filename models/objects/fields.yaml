@@ -54,6 +54,9 @@ fields:
         default: '16'
         type: number
     map_location:
-        label: 'Map overview location'
+        label: 'OverView Location'
         span: auto
-        type: text
+        showSearch: true
+        options:
+            '51.5787688, 5.1811932': Oisterwijk
+        type: dropdown

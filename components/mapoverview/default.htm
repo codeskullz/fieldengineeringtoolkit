@@ -3,41 +3,29 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
+<div id="map" style="height: 700px;"></div>
 
-
-  <li class="list-group-item" style="width: -webkit-fill-available;">
-    <div>
-        Geo Location:<br>
-        <div id="map" style="height: 700px;"></div>
-    </div>
-  </li>
-
-  {% for item in Map %}
-
-  <script>
-    const map = L.map('map').setView([{{ item.map_location }}], {{ item.maxzoom }});
+{% for item in Map %}
   
-    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  <script>
+    var map = L.map('map').setView([{{ item.map_location }}], {{ item.maxzoom }});
+  
+    var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     	maxZoom: 19,
     	attribution: ''
     }).addTo(map);
-
-    const circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
+    
+    var circle = L.circle([{{ item.location }}], {{ item.parameters|raw }}).addTo(map);
 
     var popup = L.popup()
     .setLatLng([{{ item.location }}])
     .setContent("{{ item. name }}")
     .openOn(map);
 
+    var parameters = {};
+
+
   </script>
-
-{% else %}
-
-<div class="no-data">
-  <div class="alert alert-danger" role="alert">
-    <i><i class="bi bi-exclamation-triangle"></i> Geen Objecten gevonden</i>
-  </div>
-</div>
 
 {% endfor %}
 

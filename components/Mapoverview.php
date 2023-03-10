@@ -2,8 +2,9 @@
 
 use Cms\Classes\ComponentBase;
 use Nielsvandendries\Fieldengineeringtoolkit\Models\Objects;
+use Request;
 
-class Map extends ComponentBase
+class Mapoverview extends ComponentBase
 {
     public $item;
     public function componentDetails()
@@ -28,4 +29,6 @@ class Map extends ComponentBase
         $this->addCss('/plugins/nielsvandendries/fieldengineeringtoolkit/assets/leaflet.css');
         $this->addJs('/plugins/nielsvandendries/fieldengineeringtoolkit/assets/leaflet.js');
     }
+
+    
 }
