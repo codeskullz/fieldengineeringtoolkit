@@ -52,11 +52,9 @@
     - 'Drop table nielsvandendries_fieldengineeringtoolkit_users'
     - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_users.php
 1.0.19:
-    - 'Created table nielsvandendries_fieldengineeringtoolkit_porncategorie'
-    - builder_table_create_nielsvandendries_fieldengineeringtoolkit_porncategorie.php
+    - minor updates
 1.0.20:
-    - 'Updated table nielsvandendries_fieldengineeringtoolkit_porncategorie'
-    - builder_table_update_nielsvandendries_fieldengineeringtoolkit_porncategorie.php
+    - minor updates
 1.0.21:
     - 'Created table nielsvandendries_fieldengineeringtoolkit_usermanager'
     - builder_table_create_nielsvandendries_fieldengineeringtoolkit_usermanager.php
@@ -81,8 +79,7 @@
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_3.php
 1.0.29:
-    - 'Drop table nielsvandendries_fieldengineeringtoolkit_porncategorie'
-    - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_porncategorie.php
+    - minor updates
 1.0.30:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_4.php
