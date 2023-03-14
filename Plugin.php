@@ -18,8 +18,6 @@ class Plugin extends PluginBase
     }
 
     {
-        public $require = [
-            'inetis.listswitch',
-        ];
+        public $require = ['inetis.listswitch'];
     }
 }
