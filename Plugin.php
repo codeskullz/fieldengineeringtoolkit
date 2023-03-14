@@ -16,4 +16,10 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    {
+        public $require = [
+            'inetis.listswitch',
+        ];
+    }
 }

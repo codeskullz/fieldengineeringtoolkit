@@ -11,6 +11,8 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "rainLab/user": "^1.7"
+        "rainLab/user": "^1.7",
+        "inetis/listswitch-plugin": "^1.1.0",
+        "Renatio/FormBuilder-plugin": "^3.1"
     }
 }
