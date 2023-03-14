@@ -116,4 +116,4 @@
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects_6.php
 1.0.43:
     - Minor BugFixes
-    - adding dependencies
+    - removing dependencies
