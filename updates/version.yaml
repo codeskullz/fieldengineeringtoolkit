@@ -75,6 +75,8 @@
 1.0.26:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_usermanager'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_usermanager_2.php
+1.0.27:   
+    - minor updates
 1.0.28:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_3.php
@@ -84,9 +86,17 @@
 1.0.30:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_planning'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_planning_4.php
+1.0.31:
+    - minor updates
 1.0.32:
     - 'Drop table nielsvandendries_fieldengineeringtoolkit_unitsofdistance'
     - builder_table_delete_nielsvandendries_fieldengineeringtoolkit_unitsofdistance.php
+1.0.33:
+    - minor updates
+1.0.34:
+    - minor updates
+1.0.35:
+    - minor updates
 1.0.36:
     - 'Created table nielsvandendries_fieldengineeringtoolkit_objects'
     - builder_table_create_nielsvandendries_fieldengineeringtoolkit_objects.php
@@ -96,6 +106,8 @@
 1.0.38:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_objects'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects_2.php
+1.0.39:
+    - minor updates
 1.0.40:
     - 'Updated table nielsvandendries_fieldengineeringtoolkit_objects'
     - builder_table_update_nielsvandendries_fieldengineeringtoolkit_objects_4.php
