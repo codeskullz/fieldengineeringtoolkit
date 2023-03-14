@@ -12,6 +12,6 @@
     "require": {
         "composer/installers": "~1.0",
         "rainLab/user": "^1.7",
-        "Inetis/ListSwitch": "^1.1"
+        "inetis/listswitch-plugin": "^1.1"
     }
 }
