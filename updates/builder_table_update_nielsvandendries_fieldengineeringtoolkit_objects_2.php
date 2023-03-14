@@ -9,8 +9,6 @@ class BuilderTableUpdateNielsvandendriesFieldengineeringtoolkitObjects2 extends 
     {
         Schema::table('nielsvandendries_fieldengineeringtoolkit_objects', function($table)
         {
-            $table->string('latitude');
-            $table->string('longitude');
             $table->text('parameters');
         });
     }
@@ -19,8 +17,6 @@ class BuilderTableUpdateNielsvandendriesFieldengineeringtoolkitObjects2 extends 
     {
         Schema::table('nielsvandendries_fieldengineeringtoolkit_objects', function($table)
         {
-            $table->dropColumn('latitude');
-            $table->dropColumn('longitude');
             $table->dropColumn('parameters');
         });
     }
